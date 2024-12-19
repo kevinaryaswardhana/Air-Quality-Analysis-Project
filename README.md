@@ -32,9 +32,11 @@ An interactive dashboard and analysis project to explore air quality data across
    conda create --name air-quality python=3.9
 
 2. Activate the environment:
+   ```bash
    conda activate air-quality
 
 3. Install dependencies:
+   ```bash
    pip install -r requirements.txt
 
 ### **Environment Setup - Shell/Terminal**
@@ -44,38 +46,20 @@ An interactive dashboard and analysis project to explore air quality data across
    cd proyek_analisis_data_air_quality_dataset
 
 2. Initialize a virtual environment:
+   ```bash
    pipenv install
    pipenv shell
 
 3. Install dependencies:
+   ```bash
    pip install -r requirements.txt
 
 ### **Run the Streamlit App**
 To launch the interactive dashboard, use the following command:
+```
 streamlit run dashboard/Dashboard.py
-
-### **File Structure**
-submission
-├───dashboard
-│   ├───main_data.csv
-│   ├───Dashboard.py
-├───data
-│   ├───PRSA_Data_Aotizhongxin_20130301-20170228.csv
-│   ├───PRSA_Data_Changping_20130301-20170228.csv
-│   ├───PRSA_Data_Dingling_20130301-20170228.csv
-│   ├───PRSA_Data_Dongsi_20130301-20170228.csv
-│   ├───PRSA_Data_Guanyuan_20130301-20170228.csv
-│   ├───PRSA_Data_Gucheng_20130301-20170228.csv
-│   ├───PRSA_Data_Huairou_20130301-20170228.csv
-│   ├───PRSA_Data_Nongzhanguan_20130301-20170228.csv
-│   ├───PRSA_Data_Shunyi_20130301-20170228.csv
-│   ├───PRSA_Data_Tiantan_20130301-20170228.csv
-│   ├───PRSA_Data_Wanliu_20130301-20170228.csv
-│   ├───PRSA_Data_Wanshouxigong_20130301-20170228.csv
-├───Proyek_Analisis_Data_Air_Quality_Dataset.ipynb
-├───README.md
-├───requirements.txt
-└───url.txt
+```
+---
 
 ### **Dependencies**
 The following Python libraries are required to run the project:
@@ -89,7 +73,10 @@ The following Python libraries are required to run the project:
 - scikit-learn
 
 Install all dependencies using:
+```
 pip install -r requirements.txt
+```
+---
 
 ### **Key Insights**
 From the Notebook:
@@ -110,9 +97,11 @@ The analysis and dashboard provide actionable insights to guide air quality mana
 - Seasonal Strategies: Focus on implementing pollution control measures during winter months when air quality is poorest.
 - Correlation Awareness: Use DEWP levels as an early indicator of potential PM2.5 spikes, especially during humid periods.
 
+---
+
 ### **About the Author**
-**Name**: Kevin Arya Swardhana 
-**Email**: kevinaryastarigan@gmail.com  
+**Name**: Kevin Arya Swardhana
+**Email**: kevinaryastarigan@gmail.com
 **Dicoding Profile**: [kevinaryastarigan](https://www.dicoding.com/users/kevinaryastarigan)
 
-**Feel free to reach out for any questions or feedback!**"# Air-Quality-Analysis-Project" 
+**Feel free to reach out for any questions or feedback!**
