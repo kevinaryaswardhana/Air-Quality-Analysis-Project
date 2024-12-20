@@ -111,12 +111,22 @@ def main():
 
         # Correlation Matrix
         st.write("### Correlation Matrix")
-        plt.figure(figsize=(16, 10))
-        correlation_matrix = data.corr()
-        sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", linewidths=0.5)
-        plt.title("Correlation Matrix of Numerical Variables", fontsize=18)
-        st.pyplot(plt.gcf())
-        plt.clf()
+        try:
+            # Filter only numeric columns
+            numerical_columns = data.select_dtypes(include=['float64', 'int64']).columns
+            if len(numerical_columns) == 0:
+                st.warning("No numerical columns available for correlation analysis.")
+            else:
+                correlation_matrix = data[numerical_columns].corr()
+
+                # Plot correlation matrix
+                plt.figure(figsize=(16, 10))
+                sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", linewidths=0.5)
+                plt.title("Correlation Matrix of Numerical Variables", fontsize=18)
+                st.pyplot(plt.gcf())
+                plt.clf()
+        except Exception as e:
+            st.error(f"An error occurred while generating the correlation matrix: {e}")
 
     elif selected_page == "Visualization & Explanatory Analysis":
         st.write("## Visualization & Explanatory Analysis")
