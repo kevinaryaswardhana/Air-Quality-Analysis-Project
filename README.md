@@ -15,7 +15,7 @@ https://kevinaryaswardhana-air-quality-analysis-dashboard.streamlit.app/
     </td>
     <td align="center">
       <img src="https://github.com/kevinaryaswardhana/Air-Quality-Analysis-Project/blob/main/dashboard/Exploratory%20Data%20Analysis%20Dashboard.jpg?raw=true" alt="Exploratory Data Analysis Dashboard" width="300"/>
-      <br><b>EDA Dashboard</b>
+      <br><b>Exploratory Data Analysis Dashboard</b>
     </td>
   </tr>
   <tr>
