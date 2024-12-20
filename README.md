@@ -6,10 +6,29 @@ An interactive dashboard and analysis project to explore air quality data across
 https://kevinaryaswardhana-air-quality-analysis-dashboard.streamlit.app/
 
 ## Preview Dashboard
-![alt text](https://github.com/kevinaryaswardhana/Air-Quality-Analysis-Project/blob/main/dashboard/Home%20Dashboard.jpg?raw=true)
-![alt text](https://github.com/kevinaryaswardhana/Air-Quality-Analysis-Project/blob/main/dashboard/Exploratory%20Data%20Analysis%20Dashboard.jpg?raw=true)
-![alt text](https://github.com/kevinaryaswardhana/Air-Quality-Analysis-Project/blob/main/dashboard/Visualization%20Explanatory%20Analysis%20Dashboard.jpg?raw=true)
-![alt text](https://github.com/kevinaryaswardhana/Air-Quality-Analysis-Project/blob/main/dashboard/Advanced%20Analysis%20Dashboard.jpg?raw=true)
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/kevinaryaswardhana/Air-Quality-Analysis-Project/blob/main/dashboard/Home%20Dashboard.jpg?raw=true" alt="Home Dashboard" width="300"/>
+      <br><b>Home Dashboard</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/kevinaryaswardhana/Air-Quality-Analysis-Project/blob/main/dashboard/Exploratory%20Data%20Analysis%20Dashboard.jpg?raw=true" alt="Exploratory Data Analysis Dashboard" width="300"/>
+      <br><b>EDA Dashboard</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/kevinaryaswardhana/Air-Quality-Analysis-Project/blob/main/dashboard/Visualization%20Explanatory%20Analysis%20Dashboard.jpg?raw=true" alt="Visualization Explanatory Analysis Dashboard" width="300"/>
+      <br><b>Visualization Dashboard</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/kevinaryaswardhana/Air-Quality-Analysis-Project/blob/main/dashboard/Advanced%20Analysis%20Dashboard.jpg?raw=true" alt="Advanced Analysis Dashboard" width="300"/>
+      <br><b>Advanced Analysis Dashboard</b>
+    </td>
+  </tr>
+</table>
 
 ---
 
