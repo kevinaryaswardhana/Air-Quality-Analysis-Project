@@ -157,7 +157,7 @@ def main():
         highest_avg_pm25 = avg_pm25.sort_values(by='PM2.5', ascending=False).head(5)
 
         plt.figure(figsize=(16, 8))
-        sns.barplot(data=highest_avg_pm25, x='PM2.5', y='location', palette='Reds_r')
+        sns.barplot(data=highest_avg_pm25, x='PM2.5', y='location', palette='Blues_r')
         plt.title("Top 5 Locations with Highest Average PM2.5 Levels", fontsize=18)
         plt.xlabel("Average PM2.5 (µg/m³)", fontsize=14)
         plt.ylabel("Location", fontsize=14)
@@ -171,7 +171,7 @@ def main():
         dongsi_monthly_avg['date'] = dongsi_monthly_avg['date'].dt.to_timestamp()
 
         plt.figure(figsize=(16, 8))
-        sns.lineplot(data=dongsi_monthly_avg, x='date', y='PM2.5', marker='o', color='purple')
+        sns.lineplot(data=dongsi_monthly_avg, x='date', y='PM2.5', marker='o', color='blue')
         plt.axhline(y=150, color='red', linestyle='--', label='PM2.5 Threshold (150)')
         plt.legend()
         plt.title("Monthly PM2.5 Trend in Dongsi", fontsize=18)
@@ -186,7 +186,7 @@ def main():
         seasonal_avg_pm25 = dongsi_data.groupby('season')['PM2.5'].mean().reset_index()
 
         plt.figure(figsize=(16, 8))
-        sns.barplot(data=seasonal_avg_pm25, x='season', y='PM2.5', palette='coolwarm')
+        sns.barplot(data=seasonal_avg_pm25, x='season', y='PM2.5', palette='Blues_r')
         plt.title("Seasonal PM2.5 Levels in Dongsi", fontsize=18)
         plt.xlabel("Season", fontsize=14)
         plt.ylabel("Average PM2.5 (µg/m³)", fontsize=14)
@@ -196,21 +196,6 @@ def main():
 
     elif selected_page == "Advanced Analysis":
         st.write("## Advanced Analysis")
-
-        # RFM Analysis
-        st.write("## RFM Analysis")
-        rfm_data = data.groupby('location').agg(
-            Recency=('date', lambda x: (data['date'].max() - x.max()).days),
-            Frequency=('PM2.5', 'count'),
-            Monetary=('PM2.5', 'mean')
-        ).reset_index()
-        scaler = MinMaxScaler()
-        rfm_data[['Recency', 'Frequency', 'Monetary']] = scaler.fit_transform(rfm_data[['Recency', 'Frequency', 'Monetary']])
-        rfm_data['RFM_Score'] = rfm_data[['Recency', 'Frequency', 'Monetary']].mean(axis=1)
-        plt.figure(figsize=(16, 8))  # Increased figure size
-        sns.barplot(data=rfm_data, x='location', y='RFM_Score', palette='Blues_r')
-        st.pyplot(plt.gcf())
-        plt.clf()
 
         # Geospatial Analysis
         st.write("## Geospatial Analysis")
