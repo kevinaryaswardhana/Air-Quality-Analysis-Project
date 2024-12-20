@@ -100,8 +100,8 @@ The analysis and dashboard provide actionable insights to guide air quality mana
 ---
 
 ### **About the Author**
-**Name**: Kevin Arya Swardhana
-**Email**: kevinaryastarigan@gmail.com
-**Dicoding Profile**: [kevinaryastarigan](https://www.dicoding.com/users/kevinaryastarigan)
+- **Name**: Kevin Arya Swardhana
+- **Email**: kevinaryastarigan@gmail.com
+- **Dicoding Profile**: [kevinaryastarigan](https://www.dicoding.com/users/kevinaryastarigan)
 
 **Feel free to reach out for any questions or feedback!**
