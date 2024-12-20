@@ -5,6 +5,9 @@ An interactive dashboard and analysis project to explore air quality data across
 ## Live Streamlit Dashboard
 https://kevinaryaswardhana-air-quality-analysis-dashboard.streamlit.app/
 
+## Preview Dashboard
+![alt text](https://github.com/kevinaryaswardhana/Air-Quality-Analysis-Project/blob/main/dashboard/HomeDashboard.jpg?raw=true)
+
 ---
 
 ## **Features**
